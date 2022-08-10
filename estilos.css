@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+/* font-family: 'Shadows Into Light', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+/* font-family: 'Smooch', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+/* font-family: 'Abel', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+/* font-family: 'Indie Flower', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+/* font-family: 'Permanent Marker', cursive; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-image: url(./assets/multimedia/blackfond.png);
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #000000;
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  font-family: "Indie Flower", cursive;
+  color: beige;
+  padding: 5px;
+  font-size: 20px;
+}
+.navbar-brand img {
+  margin-top: 10px;
+  height: 40pxpx;
+  width: 60px;
+}
+
+.hijo2 {
+  font-family: "Shadows Into Light", cursive;
+  color: rgba(171, 155, 12, 0.836);
+  text-align: center;
+  margin-top: 50px;
+  font-size: 15px;
+}
+
+.hijo3 {
+  text-align: center;
+  margin-bottom: 200px;
+  font-family: "Smooch", cursive;
+  color: rgba(234, 234, 140, 0.678);
+  font-size: 16px;
+  letter-spacing: 5px;
+}
+
+footer {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #8a7a18 100%);
+  min-height: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.icons a {
+  color: white;
+  padding: 5px;
+}
+
+.jumbotron {
+  background-color: black;
+  width: 100%;
+  height: 700px;
+  margin-bottom: 0px;
+}
+.jumbotron h1 {
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+.jumbotron h1 :hover {
+  color: #8a7a18;
+  transition: 1.5s;
+}
+.jumbotron iframe {
+  width: 500px;
+  height: 50px;
+}
+
+.aboutTitle, .galeria h1, .tratamiento h2, .tratamientoTitle {
+  color: #8a7a18;
+  padding: 20px;
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+
+.perfil p {
+  padding: 30px;
+  color: beige;
+  border: solid #8a7a18;
+  margin: 15px;
+}
+
+.tiger {
+  width: 100%;
+  height: 400px;
+  background-image: url(./assets/multimedia/animal-4004844_1920.jpg);
+  background-size: cover;
+}
+
+.about h2 {
+  color: #8a7a18;
+  font-family: "Permanent Marker", cursive;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 40px;
+}
+.about p {
+  font-family: "Shadows Into Light", cursive;
+  color: beige;
+}
+
+.btn--ansiedad-gral {
+  background-image: url(./assets/multimedia/blackfond.png);
+  color: beige;
+  height: 300px;
+  width: 100%;
+  border: solid 2px white;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  text-align: left;
+  padding: 15px;
+}
+
+h2 {
+  font-family: "Shadows Into Light", cursive;
+  padding: 10px;
+}
+
+.btn--ansiedad-panic {
+  background-image: url(./assets/multimedia/blackfond.png);
+  color: rgba(171, 155, 12, 0.42);
+  height: 300px;
+  width: 100%;
+  border: solid 2px white;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  text-align: left;
+  padding: 15px;
+}
+
+h2 {
+  font-family: "Shadows Into Light", cursive;
+  padding: 10px;
+}
+
+.btn--ansiedad-depred {
+  background-image: url(./assets/multimedia/blackfond.png);
+  color: beige;
+  height: 300px;
+  width: 100%;
+  border: solid 2px white;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  text-align: left;
+  padding: 15px;
+}
+
+h2 {
+  font-family: "Shadows Into Light", cursive;
+  padding: 10px;
+}
+
+.btn--ansiedad-fobia {
+  background-image: url(./assets/multimedia/blackfond.png);
+  color: rgba(171, 155, 12, 0.42);
+  height: 300px;
+  width: 100%;
+  border: solid 2px white;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
+  text-align: left;
+  padding: 15px;
+}
+
+h2 {
+  font-family: "Shadows Into Light", cursive;
+  padding: 10px;
+}
+
+.videosAnsiedad {
+  background-color: #000000;
+  width: 100%;
+}
+
+.video, .video2 {
+  background-color: #000000;
+  text-align: center;
+  padding: 20px;
+}
+
+.introduccionAnsiedad {
+  color: #8a7a18;
+  font-family: "Shadows Into Light", cursive;
+  padding: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+.introduccionAnsiedad :hover {
+  color: beige;
+  transition: 1s;
+}
+
+.tratamientos1 .row {
+  color: #8a7a18;
+  font-family: "Abel", sans-serif;
+  font-size: 40px;
+  padding: 20px;
+  border: solid rgba(234, 234, 140, 0.678);
+  text-align: center;
+  margin: 50px;
+}
+.tratamientos1 .google {
+  text-align: center;
+}
+.tratamientos1 .google a {
+  text-decoration: none;
+  color: rgba(234, 234, 140, 0.678);
+  font-size: 30px;
+  font-family: "Abel", sans-serif;
+}
+.tratamientos1 .google a :hover {
+  color: #8a7a18;
+}
+
+.galeria {
+  background-image: url(./assets/multimedia/lights-g8e15c59b2_1280.jpg);
+}
+.galeria .carousel-item img {
+  height: 400px;
+  padding: 50px;
+}
+.formulario {
+  width: 100%;
+  height: 300px;
+}/*# sourceMappingURL=estilos.css.map */
