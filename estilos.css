@@ -8,6 +8,10 @@
 /* font-family: 'Indie Flower', cursive; */
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 /* font-family: 'Permanent Marker', cursive; */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,8 +24,9 @@
   overflow-x: hidden;
 }
 
-body {
-  background-color: #000000;
+.body::-webkit-scrollbar {
+  width: 7px;
+  background-color: #8a7a18;
 }
 
 main {
@@ -31,34 +36,105 @@ main {
   justify-content: center;
 }
 
-.navbar-brand {
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+header .navbar-brand {
   text-decoration: none;
   font-family: "Indie Flower", cursive;
   color: beige;
   padding: 5px;
   font-size: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
 }
-.navbar-brand img {
+header .navbar-brand img {
   margin-top: 10px;
-  height: 40pxpx;
+  height: px;
   width: 60px;
 }
 
-.hijo2 {
-  font-family: "Shadows Into Light", cursive;
-  color: rgba(171, 155, 12, 0.836);
-  text-align: center;
-  margin-top: 50px;
-  font-size: 15px;
+.navbar-brand:hover {
+  transform: translateY(20px);
+  transition: 1s;
 }
 
-.hijo3 {
+main h1 {
+  font-family: "Shadows Into Light", cursive;
+  color: #4b4949;
+  padding-top: 50px;
+  font-size: 50px;
   text-align: center;
-  margin-bottom: 200px;
+}
+main h1 span {
+  color: #8a7a18;
+}
+main h1 :hover {
+  color: beige;
+  font-size: 70px;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  transition: 2s;
+}
+main h3 {
+  color: rgb(125, 125, 117);
+  text-align: center;
   font-family: "Smooch", cursive;
-  color: rgba(234, 234, 140, 0.678);
-  font-size: 16px;
-  letter-spacing: 5px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  letter-spacing: 10px;
+}
+main .home {
+  padding-top: 50px;
+  background-color: rgba(0, 0, 0, 0.4980392157);
+}
+main .home h4 {
+  font-family: "Indie Flower", cursive;
+  color: #8a7a18;
+  letter-spacing: 10px;
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+}
+main .item1 img {
+  width: 300px;
+  border-radius: 200px;
+  background-color: #4b4949;
+}
+main p {
+  color: beige;
+}
+
+.texto:hover {
+  box-shadow: 0 0 0 2px rgb(213, 210, 201);
+  transition: 2s;
+  border-radius: 30px;
+}
+
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: #000000;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 40px;
+  color: beige;
+  border: beige 3px solid;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff;
+}
+.subir a {
+  color: white;
+}
+.subir a:hover {
+  color: #4b4949;
 }
 
 footer {
@@ -68,65 +144,90 @@ footer {
   width: 100%;
   text-align: center;
   padding: 5px;
-  font-size: 16px;
+  font-size: 20px;
 }
-
-.icons a {
+footer a {
   color: white;
   padding: 5px;
+  font-size: 25px;
+}
+footer a :hover {
+  color: #000000;
 }
 
-.jumbotron {
-  background-color: black;
-  width: 100%;
-  height: 700px;
-  margin-bottom: 0px;
-}
-.jumbotron h1 {
-  font-family: "Abel", sans-serif;
-  text-align: center;
-  font-size: 50px;
-}
-.jumbotron h1 :hover {
-  color: #8a7a18;
-  transition: 1.5s;
-}
-.jumbotron iframe {
-  width: 500px;
-  height: 50px;
-}
-
-.aboutTitle, .galeria h1, .tratamiento h2, .tratamientoTitle {
+.aboutTitle, h1, .tratamientoTitle {
   color: #8a7a18;
   padding: 20px;
   font-family: "Abel", sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 50px;
 }
 
-.perfil p {
-  padding: 30px;
-  color: beige;
-  border: solid #8a7a18;
-  margin: 15px;
+.aboutTitle:hover, h1:hover, .tratamientoTitle:hover {
+  transform: translateX(200px);
+  transition: 5s;
+  box-shadow: 0 0 0 2px rgb(213, 210, 201);
+  transition: 2s;
+  border-radius: 30px;
 }
 
-.tiger {
-  width: 100%;
-  height: 400px;
-  background-image: url(./assets/multimedia/animal-4004844_1920.jpg);
-  background-size: cover;
+.about {
+  background-color: rgba(138, 123, 24, 0.3254901961);
+  border: solid black 5px;
 }
-
-.about h2 {
-  color: #8a7a18;
-  font-family: "Permanent Marker", cursive;
-  text-align: left;
-  margin-left: 20px;
+.about h4 {
+  font-family: "Abel", sans-serif;
   font-size: 40px;
+  text-align: center;
+  padding: 15px;
+  color: black;
 }
 .about p {
   font-family: "Shadows Into Light", cursive;
+}
+
+.perfil img {
+  width: 500px;
+  padding-top: 100px;
+}
+
+.perfil img:hover {
+  filter: grayscale(100%);
+  border-radius: 250px;
+  transition: 5s;
+}
+
+.tigre {
+  background-image: url(./assets/multimedia/My\ project-1.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+.tigre h3 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 40px;
+  padding: 20px;
+  color: #000000;
+}
+.tigre p {
+  font-family: "Shadows Into Light", cursive;
+  text-align: center;
+  color: rgb(171, 171, 154);
+  font-size: 20px;
+}
+
+.ansiedad {
+  background-color: rgba(222, 164, 27, 0.1882352941);
+  background-image: linear-gradient(0deg, rgba(222, 164, 27, 0.3490196078) 0%, rgba(73, 72, 72, 0.3725490196) 70%);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.ansiedad p {
+  font-family: "Abel", sans-serif;
+  margin: 10px;
   color: beige;
 }
 
@@ -225,24 +326,7 @@ h2 {
 .videosAnsiedad {
   background-color: #000000;
   width: 100%;
-}
-
-.video, .video2 {
-  background-color: #000000;
-  text-align: center;
-  padding: 20px;
-}
-
-.introduccionAnsiedad {
-  color: #8a7a18;
-  font-family: "Shadows Into Light", cursive;
-  padding: 40px;
-  font-size: 20px;
-  text-align: center;
-}
-.introduccionAnsiedad :hover {
-  color: beige;
-  transition: 1s;
+  margin: 15px;
 }
 
 .tratamientos1 .row {
@@ -262,19 +346,84 @@ h2 {
   color: rgba(234, 234, 140, 0.678);
   font-size: 30px;
   font-family: "Abel", sans-serif;
+  padding: 5px;
 }
-.tratamientos1 .google a :hover {
+
+.google a:hover {
+  color: #000000;
+  box-shadow: 0 0 0 5px #8a7a18;
+  background-color: beige;
+  transition: 2s;
+  border-radius: 5px;
+}
+
+.tratamiento h3 {
+  font-family: "Shadows Into Light", cursive;
+}
+.tratamiento p {
+  font-family: "Abel", sans-serif;
+}
+.tratamiento .lista {
+  color: #8a7a18;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+  padding: 15px;
+}
+.tratamiento h2 {
   color: #8a7a18;
 }
 
-.galeria {
-  background-image: url(./assets/multimedia/lights-g8e15c59b2_1280.jpg);
+.tratamiento h3:hover {
+  color: #8a7a18;
 }
-.galeria .carousel-item img {
-  height: 400px;
-  padding: 50px;
+
+.lista li:hover {
+  transform: translateX(40px);
+  transition: 2s;
 }
+
+.galery {
+  background-color: rgba(255, 255, 255, 0.071);
+  border-radius: 30px;
+}
+.galery img {
+  width: 100%;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+img:hover {
+  filter: grayscale(100%);
+  border-radius: 0px;
+  transition: 5s;
+}
+
+.carrusel h2 {
+  color: #8a7a18;
+  text-align: center;
+  font-size: 40px;
+  padding: 15px;
+  border: #fff solid 5px;
+}
+.carrusel .carousel-item {
+  width: 700px;
+  height: 300px;
+  text-align: center;
+  filter: grayscale(100%);
+}
+
+.tituloFormulario {
+  color: #8a7a18;
+  padding: 15px;
+}
+
 .formulario {
   width: 100%;
   height: 300px;
+  padding: 30px;
+}
+.formulario label {
+  color: #8a7a18;
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
 }/*# sourceMappingURL=estilos.css.map */
