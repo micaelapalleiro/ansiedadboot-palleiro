@@ -187,8 +187,9 @@ footer a :hover {
 }
 
 .perfil img {
-  width: 500px;
+  width: 300px;
   padding-top: 100px;
+  text-align: center;
 }
 
 .perfil img:hover {
@@ -425,5 +426,5 @@ img:hover {
 .formulario label {
   color: #8a7a18;
   font-family: "Abel", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }/*# sourceMappingURL=estilos.css.map */
