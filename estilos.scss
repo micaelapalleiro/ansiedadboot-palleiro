@@ -75,24 +75,25 @@ header{
 }
 
 main{
-    h1{
+    .tituloPrincipal{
         font-family: $font1;
         color: #4b4949;
         padding-top: 50px;
+        text-align: center;
         span{
             color: #8a7a18;
         }
-        :hover{
-            color: beige;
-            font-size: 70px;
-            writing-mode: vertical-rl;
-            transition: 2s;
 
 
         }
         font-size: 50px;
         text-align: center;
     }
+    .tituloPrincipal:hover{
+        transform:none ;
+    }
+
+
     h3{
         color: rgb(125, 125, 117);
         text-align: center;
@@ -126,7 +127,7 @@ main{
     p{
         color: beige;
     }
-}
+
 
 .texto:hover{
     box-shadow: 0 0 0 2px rgb(213, 210, 201) ;
@@ -217,8 +218,8 @@ footer {
     }
     }
 .perfil img{
-    width: 300px;
-    padding-top: 100px;
+    width: 400px;
+    padding: 20px;
     text-align: center;
     }
 .perfil img:hover{
@@ -242,10 +243,10 @@ footer {
     }
 
     p{
-        font-family: $font1;
+        font-family: $font3;
         text-align: center;
         color: rgb(171, 171, 154);
-        font-size: 20px;
+        font-size: 16px;
     }
 
 }
@@ -396,7 +397,7 @@ border-radius: 5px;
 
 
 
-    h1 {
+    .tituloGaleria {
         @extend .aboutTitle
     }
 
@@ -425,7 +426,7 @@ img:hover{
         border: #fff solid 5px;
     }
     .carousel-item{
-        width: 700px;
+        width: 600px;
         height: 300px;
         text-align: center;
         filter: grayscale(100%);
@@ -445,3 +446,4 @@ img:hover{
         font-size: 16px;
     }
 }
+

@@ -63,24 +63,25 @@ header .navbar-brand img {
   transition: 1s;
 }
 
-main h1 {
-  font-family: "Shadows Into Light", cursive;
-  color: #4b4949;
-  padding-top: 50px;
+main {
   font-size: 50px;
   text-align: center;
 }
-main h1 span {
+main .tituloPrincipal {
+  font-family: "Shadows Into Light", cursive;
+  color: #4b4949;
+  padding-top: 50px;
+  text-align: center;
+}
+main .tituloPrincipal span {
   color: #8a7a18;
 }
-main h1 :hover {
-  color: beige;
-  font-size: 70px;
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
-  transition: 2s;
+
+.tituloPrincipal:hover {
+  transform: none;
 }
-main h3 {
+
+h3 {
   color: rgb(125, 125, 117);
   text-align: center;
   font-family: "Smooch", cursive;
@@ -88,11 +89,12 @@ main h3 {
   padding-bottom: 50px;
   letter-spacing: 10px;
 }
-main .home {
+
+.home {
   padding-top: 50px;
   background-color: rgba(0, 0, 0, 0.4980392157);
 }
-main .home h4 {
+.home h4 {
   font-family: "Indie Flower", cursive;
   color: #8a7a18;
   letter-spacing: 10px;
@@ -100,12 +102,14 @@ main .home h4 {
   padding: 20px;
   font-size: 40px;
 }
-main .item1 img {
+
+.item1 img {
   width: 300px;
   border-radius: 200px;
   background-color: #4b4949;
 }
-main p {
+
+p {
   color: beige;
 }
 
@@ -155,7 +159,7 @@ footer a :hover {
   color: #000000;
 }
 
-.aboutTitle, h1, .tratamientoTitle {
+.aboutTitle, .tituloGaleria, .tratamientoTitle {
   color: #8a7a18;
   padding: 20px;
   font-family: "Abel", sans-serif;
@@ -163,7 +167,7 @@ footer a :hover {
   font-size: 50px;
 }
 
-.aboutTitle:hover, h1:hover, .tratamientoTitle:hover {
+.aboutTitle:hover, .tituloGaleria:hover, .tratamientoTitle:hover {
   transform: translateX(200px);
   transition: 5s;
   box-shadow: 0 0 0 2px rgb(213, 210, 201);
@@ -187,8 +191,8 @@ footer a :hover {
 }
 
 .perfil img {
-  width: 300px;
-  padding-top: 100px;
+  width: 400px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -212,10 +216,10 @@ footer a :hover {
   color: #000000;
 }
 .tigre p {
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Abel", sans-serif;
   text-align: center;
   color: rgb(171, 171, 154);
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .ansiedad {
@@ -407,7 +411,7 @@ img:hover {
   border: #fff solid 5px;
 }
 .carrusel .carousel-item {
-  width: 700px;
+  width: 600px;
   height: 300px;
   text-align: center;
   filter: grayscale(100%);
